@@ -4,34 +4,36 @@ public class testy {
 
     public static Scanner input = new Scanner(System.in);
 
-    public static void printWall() {
+    public static int numberWalls() {
         System.out.println("Enter the number of walls");
+        int NumberWalls = input.nextInt();
+        return NumberWalls;
     };
 
     public static int findWidth(int i) {
         System.out.println("enter the Width of wall " + (i+1) + ", numerically in mm");
         int Wall_width = input.nextInt();
-        return Wall_width;
-    }
 
+        System.out.println("enter the Height of wall " + (i+1) + ", numerically in mm");
+        int Wall_height = input.nextInt();
+
+        System.out.println("enter the area of any obstructions, such as windows. light fittings or doors, numerically in mm");
+        int Obstruction_area = input.nextInt();
+
+        int Wall_area = (Wall_width * Wall_height) - Obstruction_area;
+
+        return Wall_area;
+    }
     public static void main(String[] args) {
-        printWall();
-        int NumberWalls = input.nextInt();
+        int NumberWalls = numberWalls();
         int[] Walls = new int[NumberWalls];
 
         for (int i = 0; i <= (NumberWalls-1); i++) {
 
-            //method is working but text broken
-            int Wall_width = findWidth(i);
+           int Wall_area = findWidth(i);
 
-            System.out.println("enter the Height of wall " + (i+1) + ", numerically in mm");
-            int Wall_height = input.nextInt();
-
-            System.out.println("enter the area of any obstructions, such as windows. light fittings or doors, numerically in mm");
-            int Obstruction_area = input.nextInt();
-
-            int Wall_area = (Wall_width * Wall_height) - Obstruction_area;
             Walls[i] = Wall_area;
+
             System.out.println("The area of wall " + (i+1) + " is "  + Walls[i] + "mm");
         }
        int totalArea = 0;
