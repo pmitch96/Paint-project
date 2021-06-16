@@ -43,5 +43,10 @@ public class testy {
         System.out.println("The total area that requires painting is " +totalArea + "mm");
     }
 }
-//Have 3 paint pots to choose from, which have different costs and cover different areas per litre.
-//They will come in 5l buckets
+//Things to add:
+//Can choose if you want to do 1, 2 or 3 coats
+//Paint 1: 2.5L costs £[] covers[] square metres. 5L costs £[] covers[] square metres. 10L costs £[] covers[] square metres.
+//Paint 2: 2.5L costs £[] covers[] square metres. 5L costs £[] covers[] square metres. 10L costs £[] covers[] square metres.
+//Paint 3: 2.5L costs £[] covers[] square metres. 5L costs £[] covers[] square metres. 10L costs £[] covers[] square metres.
+//Use switch
+//Use other loops
