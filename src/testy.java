@@ -1,23 +1,25 @@
 import java.util.Scanner;
 
 public class testy {
-    public static void main(String[] args) {
-        Scanner Number_of_walls = new Scanner(System.in);
+    public static void printWall() {
         System.out.println("Enter the number of walls");
-        int NumberWalls = Number_of_walls.nextInt();
+    };
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        printWall();
+        int NumberWalls = input.nextInt();
         int[] Walls = new int[NumberWalls];
+
         for (int i = 0; i <= (NumberWalls-1); i++) {
-            Scanner Input_Width = new Scanner(System.in);
+
             System.out.println("enter the Width of wall " + (i+1) + ", numerically in mm");
-            int Wall_width = Input_Width.nextInt();
+            int Wall_width = input.nextInt();
 
-            Scanner Input_Height = new Scanner(System.in);
             System.out.println("enter the Height of wall " + (i+1) + ", numerically in mm");
-            int Wall_height = Input_Height.nextInt();
+            int Wall_height = input.nextInt();
 
-            Scanner Input_area_of_obstructions = new Scanner(System.in);
             System.out.println("enter the area of any obstructions, such as windows. light fittings or doors, numerically in mm");
-            int Obstruction_area = Input_area_of_obstructions.nextInt();
+            int Obstruction_area = input.nextInt();
 
             int Wall_area = (Wall_width * Wall_height) - Obstruction_area;
             Walls[i] = Wall_area;
