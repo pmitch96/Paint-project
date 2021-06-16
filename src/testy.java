@@ -1,19 +1,28 @@
 import java.util.Scanner;
 
 public class testy {
+
+    public static Scanner input = new Scanner(System.in);
+
     public static void printWall() {
         System.out.println("Enter the number of walls");
     };
+
+    public static int findWidth(int i) {
+        System.out.println("enter the Width of wall " + (i+1) + ", numerically in mm");
+        int Wall_width = input.nextInt();
+        return Wall_width;
+    }
+
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
         printWall();
         int NumberWalls = input.nextInt();
         int[] Walls = new int[NumberWalls];
 
         for (int i = 0; i <= (NumberWalls-1); i++) {
 
-            System.out.println("enter the Width of wall " + (i+1) + ", numerically in mm");
-            int Wall_width = input.nextInt();
+            //method is working but text broken
+            int Wall_width = findWidth(i);
 
             System.out.println("enter the Height of wall " + (i+1) + ", numerically in mm");
             int Wall_height = input.nextInt();
