@@ -50,3 +50,4 @@ public class testy {
 //Paint 3: 2.5L costs £[] covers[] square metres. 5L costs £[] covers[] square metres. 10L costs £[] covers[] square metres.
 //Use switch
 //Use other loops
+//Change obstructions/areas you don't want to cover to height, width and calculation of area rather than just entering the area
