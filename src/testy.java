@@ -45,9 +45,10 @@ public class testy {
 }
 //Things to add:
 //Can choose if you want to do 1, 2 or 3 coats
-//Paint 1: 2.5L costs £[] covers[] square metres. 5L costs £[] covers[] square metres. 10L costs £[] covers[] square metres.
-//Paint 2: 2.5L costs £[] covers[] square metres. 5L costs £[] covers[] square metres. 10L costs £[] covers[] square metres.
-//Paint 3: 2.5L costs £[] covers[] square metres. 5L costs £[] covers[] square metres. 10L costs £[] covers[] square metres.
+//Paint 1: 2.5L costs £[10] covers[25] square metres. 5L costs £[15] covers[50] square metres. 10L costs £[20] covers[100] square metres.
+//Paint 2: 2.5L costs £[15] covers[50] square metres. 5L costs £[20] covers[100] square metres. 10L costs £[25] covers[200] square metres.
+//Paint 3: 2.5L costs £[20] covers[75] square metres. 5L costs £[25] covers[150] square metres. 10L costs £[30] covers[300] square metres.
+//Should I allow the entering of cost and how much it covers rather than listing 3?
 //Use switch
 //Use other loops
 //Change obstructions/areas you don't want to cover to height, width and calculation of area rather than just entering the area
